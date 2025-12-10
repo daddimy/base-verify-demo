@@ -31,7 +31,7 @@ When you call `/v1/base_verify_token`, you receive:
 {
   "token": "abc123...",
   "signature": "def456...",
-  "action": "base_verify_token",
+  "action": "claim_airdrop",
   "wallet": "0x1234..."
 }
 ```
@@ -67,7 +67,7 @@ Sign-In with Ethereum lets the wallet owner prove control over their address by 
   resources: [
     "urn:verify:provider:x",                    // Which provider
     "urn:verify:provider:x:verified:eq:true",   // Trait requirements
-    "urn:verify:action:base_verify_token"       // What action
+    "urn:verify:action:claim_airdrop"           // Your custom action name
   ]
 }
 ```

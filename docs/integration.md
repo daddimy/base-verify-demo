@@ -35,7 +35,7 @@ Even if a wallet has few transactions, Base Verify reveals if the user is high-v
                            │    • Includes wallet address
                            │    • Includes provider (x, coinbase, instagram, tiktok)
                            │    • Includes traits (verified:true, followers:gt:1000)
-                           │    • Includes action (base_verify_token)
+                           │    • Includes action (your custom action, e.g. claim_airdrop)
                            │
                            │ 3. User signs SIWE message with wallet
                            │
@@ -168,7 +168,7 @@ export async function generateSignature(
     'urn:verify:provider:x',
     'urn:verify:provider:x:verified:eq:true',
     'urn:verify:provider:x:followers:gte:100',
-    'urn:verify:action:base_verify_token'
+    'urn:verify:action:claim_airdrop'  // Your custom action name
   ]
   
   // Create SIWE message

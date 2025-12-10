@@ -84,16 +84,16 @@ Wallet has verified the provider account AND meets all trait requirements.
 {
   "token": "abc123...",
   "signature": "def456...",
-  "action": "base_verify_token",
+  "action": "claim_airdrop",
   "wallet": "0x1234..."
 }
 ```
 
 | Field | Type | Description |
 | :---- | :---- | :---- |
-| `token` | string | Deterministic verification token (for Sybil resistance) |
+| `token` | string | Deterministic verification token (for Sybil resistance). Same provider account + same action = same token. |
 | `signature` | string | Signature from Base Verify |
-| `action` | string | Action from SIWE message |
+| `action` | string | The custom action you specified in the SIWE message (e.g., `claim_airdrop`, `join_allowlist`). Different actions produce different tokens. See [Core Concepts](/docs/core-concepts#action). |
 | `wallet` | string | User's wallet address |
 
 #### 404 Not Found - Verification Not Found

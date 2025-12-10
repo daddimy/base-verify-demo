@@ -65,7 +65,7 @@ The verification token is the key to preventing duplicate claims:
 - **Deterministic**: Same provider account always produces same token
 - **Unique per provider**: X token ≠ Instagram token
 - **Unique per app**: Your tokens are different from other apps (privacy)
-- **Action-specific**: Can vary based on action in SIWE message
+- **Action-specific**: Different actions produce different tokens (e.g., `claim_airdrop` vs `join_allowlist`)
 - **Persistent**: Don't expire unless user deletes verification
 
 ### Database Schema
@@ -202,7 +202,7 @@ The app uses Sign-In with Ethereum (SIWE) messages to communicate verification r
     "urn:verify:provider:x",                     // Which provider to check
     "urn:verify:provider:x:verified:eq:true",    // Must be verified
     "urn:verify:provider:x:followers:gte:1000",  // Must have 1000+ followers
-    "urn:verify:action:base_verify_token"        // Action to perform
+    "urn:verify:action:claim_airdrop"            // Your custom action name
   ]
 }
 ```

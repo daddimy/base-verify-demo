@@ -79,14 +79,14 @@ Currently, you can only check one provider per request. To check multiple provid
 const signature = await generateSignature({
   provider: 'x',
   traits: { 'verified': 'true' },
-  action: 'base_verify_token'
+  action: 'claim_airdrop'  // Your custom action name
 });
 
 // Integer comparison
 const signature = await generateSignature({
   provider: 'instagram',
   traits: { 'followers_count': 'gte:5000' },
-  action: 'base_verify_token'
+  action: 'unlock_premium_content'
 });
 
 // Multiple traits (AND logic)
@@ -97,7 +97,7 @@ const signature = await generateSignature({
     'likes_count': 'gte:10000',
     'video_count': 'gte:50'
   },
-  action: 'base_verify_token'
+  action: 'join_creator_program'
 });
 
 // String with IN operation
@@ -106,7 +106,7 @@ const signature = await generateSignature({
   traits: { 
     'country': 'in:US,CA,MX'  // North America
   },
-  action: 'base_verify_token'
+  action: 'claim_regional_bonus'
 });
 ```
 
