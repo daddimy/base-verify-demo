@@ -2,6 +2,8 @@
 
 Base Verify allows users to prove ownership of verified accounts (X, Coinbase, Instagram, TikTok) without sharing credentials. Your app receives a deterministic token for Sybil resistance.
 
+> **Note:** Base Verify does not perform abuse detection; responsibility lies entirely with integrators.
+
 **How it works:**
 1. Check if wallet has verification → API returns yes/no
 2. If no → redirect to Base Verify Mini App for OAuth
