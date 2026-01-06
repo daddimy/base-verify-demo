@@ -12,7 +12,7 @@ Even if a wallet has few transactions, Base Verify reveals if the user is high-v
 ### Supported Providers
 
 - **X (Twitter)**: Verify accounts, check verification status (blue checkmark), follower counts
-- **Coinbase**: Check Coinbase One subscriptions, country restrictions
+- **Coinbase**: Check Coinbase One subscriptions
 - **Instagram**: Verify accounts, check follower counts
 - **TikTok**: Verify accounts, check followers, likes, video counts
 
@@ -107,7 +107,7 @@ Traits are specific attributes of provider accounts you can verify. Examples:
 
 **Coinbase:**
 - `coinbase_one_active:eq:true` - Active Coinbase One subscription
-- `country:in:US,CA,MX` - User in specific countries
+- `coinbase_one_billed:eq:true` - User has been billed for Coinbase One
 
 **Instagram:**
 - `followers_count:gte:5000` - 5000+ followers

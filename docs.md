@@ -682,7 +682,7 @@ This checks if an X account has greater than or equal to 1000 followers.
 | Greater/Equal | `gte` | Integers | Greater or equal | `followers:gte:1000` |
 | Less Than | `lt` | Integers | Strictly less | `followers:lt:5000` |
 | Less/Equal | `lte` | Integers | Less or equal | `followers:lte:5000` |
-| In (list) | `in` | Strings | Value in comma-separated list | `country:in:US,CA,MX` |
+| In (list) | `in` | Strings | Value in comma-separated list | `verified_type:in:blue,government` |
 
 ### Type System
 
@@ -699,7 +699,7 @@ This checks if an X account has greater than or equal to 1000 followers.
 **String Traits**
 - Values: Text strings
 - Supports: `eq`, `in`
-- Example: `country:eq:US` or `country:in:US,CA,MX`
+- Example: `verified_type:eq:blue` or `verified_type:in:blue,government`
 
 ### Combining Traits
 
@@ -754,19 +754,13 @@ const signature = await generateSignature({
 const signature = await generateSignature({
   provider: 'coinbase',
   traits: { 
-    'country': 'in:US,CA,MX'  // North America
+    'verified_type': 'in:blue,government'
   },
   action: 'base_verify_token'
 });
 ```
 
 ### Common Patterns
-
-**Geographic Restrictions:**
-```typescript
-// Europe only
-traits: { 'country': 'in:AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE' }
-```
 
 **Tiered Access:**
 ```typescript
@@ -833,7 +827,6 @@ The interactive examples let you test real API calls to Base Verify:
 | :---- | :---- | :---- | :---- | :---- |
 | `coinbase_one_active` | Boolean | `eq` | Active Coinbase One subscription | `"true"`, `"false"` |
 | `coinbase_one_billed` | Boolean | `eq` | User has been billed for Coinbase One | `"true"`, `"false"` |
-| `country` | String | `eq`, `in` | User's country code (ISO 3166-1 alpha-2) | `"US"`, `"CA,US,MX"` |
 
 **Examples:**
 
@@ -848,18 +841,6 @@ The interactive examples let you test real API calls to Base Verify:
 {
   provider: 'coinbase',
   traits: { 'coinbase_one_billed': 'true' }
-}
-
-// Check for specific country
-{
-  provider: 'coinbase',
-  traits: { 'country': 'US' }
-}
-
-// Check for multiple countries (comma-separated)
-{
-  provider: 'coinbase',
-  traits: { 'country': 'CA,US,MX' }
 }
 ```
 

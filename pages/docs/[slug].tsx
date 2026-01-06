@@ -41,28 +41,6 @@ const EXAMPLE_SCENARIOS: ExampleScenario[] = [
     traits: { 'followers': 'gt:100' }
   },
   {
-    id: 'coinbase-europe',
-    name: 'Coinbase One - Europe',
-    description: 'Active Coinbase One subscriber in a European country',
-    provider: 'coinbase',
-    action: 'claim_demo_coinbase_airdrop',
-    traits: { 
-      'coinbase_one_active': 'true',
-      'country': 'in:AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE'
-    }
-  },
-  {
-    id: 'coinbase-north-america',
-    name: 'Coinbase One - North America',
-    description: 'Active Coinbase One subscriber in North America (US, CA, MX)',
-    provider: 'coinbase',
-    action: 'claim_demo_coinbase_airdrop',
-    traits: { 
-      'coinbase_one_active': 'true',
-      'country': 'in:US,CA,MX'
-    }
-  },
-  {
     id: 'coinbase-billed-active',
     name: 'Coinbase One - Billed & Active',
     description: 'Coinbase One subscriber who has been billed and is currently active',
