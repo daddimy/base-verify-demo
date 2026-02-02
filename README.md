@@ -1,6 +1,6 @@
 # Base Verify Airdrop Demo
 
-A Next.js mini app demonstrating Base Verify integration for social account verification and airdrop claiming. This demo shows how to verify users' social accounts (X/Twitter, Coinbase, Instagram, TikTok) without requiring them to share credentials, while preventing Sybil attacks through deterministic tokens.
+A Next.js mini app demonstrating Base Verify integration for social account verification and airdrop claiming. This demo shows how to verify users' social accounts (X/Twitter, Coinbase, Instagram, TikTok) without requiring them to share credentials, while preventing Sybil attacks through deterministic tokens.!
 
 ## What is Base Verify?
 
