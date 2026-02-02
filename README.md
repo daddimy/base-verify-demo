@@ -322,5 +322,3 @@ For more detailed information, see the `/docs` folder:
 
 **Want to integrate Base Verify?** Fill out the [interest form](https://forms.gle/6L4hWAHkojYcefz27) and we'll reach out with API access.
 
-**Questions?** Telegram: @patnir | Farcaster: @patni
-

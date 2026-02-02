@@ -22,5 +22,3 @@ Base Verify allows users to prove ownership of verified accounts (X, Coinbase, I
 
 **Want to integrate Base Verify?** Fill out the [interest form](https://forms.gle/6L4hWAHkojYcefz27) and we'll reach out with API access.
 
-**Questions?** Telegram: @patnir | Farcaster: @patni
-

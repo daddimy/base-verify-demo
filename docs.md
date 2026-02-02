@@ -1084,5 +1084,3 @@ We'd love your feedback as you integrate! You'll be one of the first external us
 ## Get Started
 
 **Want to integrate?** Fill out the [interest form](https://forms.gle/6L4hWAHkojYcefz27) and we'll reach out with API access.
-
-**Questions?** Telegram: @patnir | Farcaster: @patni
