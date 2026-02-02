@@ -339,7 +339,7 @@ Now let's explore the full integration with configuration, traits, and error han
 
 Before integrating Base Verify, you need:
 
-1. **API Keys** - Contact [rahul.patni@coinbase.com](mailto:rahul.patni@coinbase.com) to get your keys
+1. **API Keys** - Fill out the [interest form](https://forms.gle/6L4hWAHkojYcefz27) to get your keys
 2. **A mini app** - Your app should run in Coinbase Wallet or Base ecosystem
 3. **Wallet integration** - Users must be able to connect and sign messages
 
@@ -406,7 +406,7 @@ BASE_VERIFY_SECRET_KEY=your_secret_key_here
 
 **Important:** Never include your secret key in frontend code or environment variables that are exposed to the browser (like `NEXT_PUBLIC_*` vars).
 
-Contact [rahul.patni@coinbase.com](mailto:rahul.patni@coinbase.com) to get your secret key.
+Fill out the [interest form](https://forms.gle/6L4hWAHkojYcefz27) to get your secret key.
 
 ### Step 2: Create SIWE Signature Generator (Frontend)
 
@@ -1079,11 +1079,10 @@ Try the Base Verify Mini App: [cbwallet://miniapp?url=https://verify.base.dev](c
 
 Try an example demo here: [cbwallet://miniapp?url=https://baseverifydemo.com](cbwallet://miniapp?url=https://baseverifydemo.com)
 
-Please contact [rahul.patni@coinbase.com](mailto:rahul.patni@coinbase.com) with any feedback/ tips/ requests/ etc. You will be one of the first external users of Base Verify and we appreciate your role in shaping the future of this product.
+We'd love your feedback as you integrate! You'll be one of the first external users of Base Verify.
 
-## Getting Help
+## Get Started
 
-**Need Keys? Questions or Issues?**  
-Email: [rahul.patni@coinbase.com](mailto:rahul.patni@coinbase.com)
-Telegram: @patnir
-Farcaster: @patni
+**Want to integrate?** Fill out the [interest form](https://forms.gle/6L4hWAHkojYcefz27) and we'll reach out with API access.
+
+**Questions?** Telegram: @patnir | Farcaster: @patni

@@ -110,7 +110,7 @@ See [Core Concepts](./core-concepts.md) for the full glossary, examples, and sto
 
 ### Prerequisites
 
-1. **API Key** - Contact [rahul.patni@coinbase.com](mailto:rahul.patni@coinbase.com)
+1. **API Key** - Fill out the [interest form](https://forms.gle/6L4hWAHkojYcefz27)
 2. **Wallet integration** - Users must connect and sign messages
 3. **Backend server** - To securely call Base Verify API
 

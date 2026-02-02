@@ -318,12 +318,9 @@ For more detailed information, see the `/docs` folder:
 
 ---
 
-## Support & Contact
+## Get Started
 
-**Need API keys?** Contact: [rahul.patni@coinbase.com](mailto:rahul.patni@coinbase.com)
+**Want to integrate Base Verify?** Fill out the [interest form](https://forms.gle/6L4hWAHkojYcefz27) and we'll reach out with API access.
 
-**Questions or issues?**
-- Email: rahul.patni@coinbase.com
-- Telegram: @patnir
-- Farcaster: @patni
+**Questions?** Telegram: @patnir | Farcaster: @patni
 
